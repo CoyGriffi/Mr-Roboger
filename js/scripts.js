@@ -9,7 +9,7 @@ function robotOutput(number) {
       counter.push ("Beep");
     } else if (roboTalk.includes(1)) {
       counter.push ("Boop");
-    } else if (roboTalk.includes(42)) {
+    } else if (roboTalk.includes(44)) {
       counter.push ("ERROR ERROR ERROR PLEASE CONTACT ADMIN");
     } else {
       counter.push(roboTalk);
