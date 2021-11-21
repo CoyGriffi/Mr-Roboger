@@ -1,20 +1,21 @@
 //back-end logic
 function robotOutput(number) {
   let counter = []
-  for (let index = 0; index <= number; index ++) {
-    let roboTalk = counter.push(index);
+  for (let index = 0; index <= number; index += 1) {
+    let roboTalk = index.toString();
     if (roboTalk.includes(3)) {
       counter.push ("Won't you be my neighbor?");
     } else if (roboTalk.includes(2)) {
-      return "Beep";
+      counter.push ("Beep");
     } else if (roboTalk.includes(1)) {
-      return "Boop";
+      counter.push ("Boop");
     } else if (roboTalk.includes(42)) {
-      return "ERROR ERROR ERROR PLEASE CONTACT ADMIN";
+      counter.push ("ERROR ERROR ERROR PLEASE CONTACT ADMIN");
     } else {
-      return counter
+      counter.push(roboTalk);
     }
   }
+  return counter;
 }
 
 
